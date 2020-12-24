@@ -66,7 +66,7 @@ class PreProcessing():
                 self.seconds.append(Markers[i])
         # Data structure
         DataStructure = info[info.find("DataStructure")+14:info.find("DarkNoise")-5]
-        S_D_Key = re.split(r":|,", DataStructure[DataStructure.find("S-D-Key")+9:DataStructure.find("S-D-Mask")-3])  # 多重切割
+        S_D_Key = re.split(r":|,", DataStructure[DataStructure.find("S-D-Key")+9:DataStructure.find("S-D-Mask")-3]) 
         self.S_D_Keys = []
         S_D_Values = []
         for i in range(len(S_D_Key)):
